@@ -7,7 +7,6 @@ import moment from 'moment';
 import { useDispatch } from 'react-redux';
 
 import { likePost, deletePost } from '../../../actions/posts';
-import { positions } from '@mui/system';
 
 const Post = ({ post, setCurrentId }) => {
   const dispatch = useDispatch();

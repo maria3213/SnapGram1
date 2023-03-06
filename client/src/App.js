@@ -15,6 +15,9 @@ const App = () => {
   useEffect(() => {
     dispatch(getPosts());
   }, [currentId, dispatch]);
+  //the returned dispatch function identity is stable and won't change 
+  //on re-renders (unless you change the store being passed to the Provider, 
+  //which would be extremely unusual
 
   return (
     <Container maxWidth="lg">
